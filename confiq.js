@@ -1,0 +1,433 @@
+// ============ JSONBIN.IO CONFIGURATION ============
+// 🔴 IMPORTANT: Replace these with your actual JSONBin.io values 🔴
+
+const CONFIG = {
+  // Your JSONBin.io Bin ID (get it from your bin URL)
+  BIN_ID: "69dd54c6aaba882197f62df5",
+
+  // Your JSONBin.io Master Key
+  API_KEY: "$2a$10$lFuKdMTnPXlqQzJoXdgkhu1QhcGaMvRL4VOAcF6Sdpc5BjcYIxpDS",
+
+  // JSONBin.io API Base URL
+  BASE_URL: "https://api.jsonbin.io/v3",
+
+  // Security Settings
+  SECURITY: {
+    MAX_LOGIN_ATTEMPTS: 5,
+    LOCKOUT_DURATION: 15 * 60 * 1000, // 15 minutes
+    SESSION_TIMEOUT: 30 * 60 * 1000, // 30 minutes
+    VALID_EMAIL: "albumofrcs@gmail.com",
+    VALID_PASSWORD: "albumofrcs@12#",
+  },
+};
+
+// ============ DEFAULT DATA (FULL CONTENT) ============
+const DEFAULT_DATA = {
+  teachers: [
+    {
+      id: "t2",
+      name: "মো: বাইরুল ইসলাম",
+      designation: "প্রধান শিক্ষক",
+      phone: "+8801712345679",
+      photo:
+        "https://rcs.edu.bd/images/institution/headmaster_image/1767187546.jpg",
+    },
+    {
+      id: "t3",
+      name: "মো: গোলাম মোস্তফা",
+      designation: "সহকারী প্রধান শিক্ষক (চলতি দায়িত্ব)",
+      phone: "01716437748",
+      photo: "https://rcs.edu.bd/images/teacher/1758289761.jpg",
+    },
+    {
+      id: "t4",
+      name: "MD. HAFIZUR RAHAMN",
+      designation: "সহকারী শিক্ষক (ইংরেজি)",
+      phone: "01725767065",
+      photo: "https://rcs.edu.bd/images/teacher/1725038592.jpg",
+    },
+    {
+      id: "t5",
+      name: "BIDDUT KUMER MONDAL",
+      designation: "সহকারী শিক্ষক (ইংরেজি)",
+      phone: "01710296590",
+      photo: "https://rcs.edu.bd/images/teacher/1725038647.jpg",
+    },
+    {
+      id: "t6",
+      name: "MD. SAIFUL ISLAM",
+      designation: "সহকারী শিক্ষক (গণিত)",
+      phone: "01753388100",
+      photo: "https://rcs.edu.bd/images/teacher/1725033823.jpg",
+    },
+    {
+      id: "t7",
+      name: "MD. ARIFUL ISLAM",
+      designation: "সহকারী শিক্ষক (গণিত)",
+      phone: "01711944333",
+      photo: "https://rcs.edu.bd/images/teacher/1725038526.jpg",
+    },
+    {
+      id: "t8",
+      name: "AMIT KUMAR RAY",
+      designation: "সহকারী শিক্ষক (গণিত)",
+      phone: "01764747605",
+      photo: "https://rcs.edu.bd/images/teacher/1725039141.jpg",
+    },
+    {
+      id: "t9",
+      name: "প্রিয়াংকা সিকদার",
+      designation: "সহকারী শিক্ষক (চারুকলা)",
+      phone: "01745077507",
+      photo: "https://rcs.edu.bd/images/teacher/1725034295.jpg",
+    },
+    {
+      id: "t10",
+      name: "MD. RABIUDDIN CHOWDHURY",
+      designation: "সহকারী শিক্ষক (চারুকলা)",
+      phone: "01718627496",
+      photo: "https://rcs.edu.bd/images/teacher/1762853991.png",
+    },
+    {
+      id: "t11",
+      name: "Mizanur Rahman Sohag",
+      designation: "সহকারী শিক্ষক (সামাজিক বিজ্ঞান)",
+      phone: "01730632699",
+      photo: "https://rcs.edu.bd/images/teacher/1725039209.jpg",
+    },
+    {
+      id: "t12",
+      name: "কৃষ্ণ কুমার মন্ডল",
+      designation: "সহকারী শিক্ষক (সামাজিক বিজ্ঞান)",
+      phone: "01722751164",
+      photo: "https://rcs.edu.bd/images/teacher/1758289923.jpg",
+    },
+    {
+      id: "t13",
+      name: "SHAHIDULLAH",
+      designation: "সহকারী শিক্ষক (ইসলাম ধর্ম)",
+      phone: "01717516333",
+      photo: "https://rcs.edu.bd/images/teacher/1758290585.jpg",
+    },
+    {
+      id: "t14",
+      name: "MD. ASHEK ELAHEE",
+      designation: "সহকারী শিক্ষক (ইসলাম ধর্ম)",
+      phone: "01929430257",
+      photo: "https://rcs.edu.bd/images/teacher/1725038979.jpg",
+    },
+    {
+      id: "t15",
+      name: "MOHIDUL ISLAM",
+      designation: "সহকারী শিক্ষক (ইসলাম ধর্ম)",
+      phone: "01738711314",
+      photo: "https://rcs.edu.bd/images/teacher/1725039062.jpg",
+    },
+    {
+      id: "t16",
+      name: "মোঃ সাজ্জাদ হোসেন",
+      designation: "সহকারী শিক্ষক (ইসলাম ধর্ম)",
+      phone: "01712073573",
+      photo: "https://rcs.edu.bd/images/teacher/1730561692.jpg",
+    },
+    {
+      id: "t17",
+      name: "মোহাম্মদ যাকারিয়া",
+      designation: "সহকারী শিক্ষক (ইসলাম ধর্ম)",
+      phone: "01737214324",
+      photo: "https://rcs.edu.bd/images/teacher/1758290346.jpg",
+    },
+    {
+      id: "t18",
+      name: "SOMA SARKER",
+      designation: "সহকারী শিক্ষক (ভৌত বিজ্ঞান)",
+      phone: "01721335249",
+      photo: "https://rcs.edu.bd/images/teacher/1725038446.jpg",
+    },
+    {
+      id: "t19",
+      name: "মোঃ হাসানুজ্জামান",
+      designation: "সহকারী শিক্ষক (ভৌত বিজ্ঞান)",
+      phone: "01722456144",
+      photo: "https://rcs.edu.bd/images/teacher/1758290225.jpg",
+    },
+    {
+      id: "t20",
+      name: "সেলিনা খাতুন",
+      designation: "সহকারী শিক্ষক (ব্যবসায় শিক্ষা)",
+      phone: "01765918942",
+      photo: "https://rcs.edu.bd/images/teacher/1730561405.jpg",
+    },
+    {
+      id: "t21",
+      name: "TARIKUL ISLAM",
+      designation: "সিনিয়র শিক্ষক (জীববিজ্ঞান)",
+      phone: "01716049348",
+      photo: "https://rcs.edu.bd/images/teacher/1730561024.jpg",
+    },
+    {
+      id: "t22",
+      name: "S.M. MOSHARAF HOSSAIN",
+      designation: "সিনিয়র শিক্ষক (জীববিজ্ঞান)",
+      phone: "01712196605",
+      photo: "https://rcs.edu.bd/images/teacher/1725033985.jpg",
+    },
+    {
+      id: "t23",
+      name: "CHITTYA RANJAN SINGH",
+      designation: "সিনিয়র শিক্ষক (জীববিজ্ঞান)",
+      phone: "01718840203",
+      photo: "https://rcs.edu.bd/images/teacher/1725034068.jpg",
+    },
+    {
+      id: "t24",
+      name: "মোঃ আবু বাককার সিদ্দিক",
+      designation: "সিনিয়র শিক্ষক (সামাজিক বিজ্ঞান)",
+      phone: "01712439446",
+      photo: "https://rcs.edu.bd/images/teacher/1758289832.jpg",
+    },
+    {
+      id: "t25",
+      name: "MD. EMRAN ALI",
+      designation: "সিনিয়র শিক্ষক (ইংরেজি)",
+      phone: "01712512262",
+      photo: "https://rcs.edu.bd/images/teacher/1725033743.jpg",
+    },
+    {
+      id: "t26",
+      name: "MD. ABDUS SALAM MONDOL",
+      designation: "সিনিয়র শিক্ষক (ইংরেজি)",
+      phone: "01712833116",
+      photo: "https://rcs.edu.bd/images/teacher/1725034411.jpg",
+    },
+    {
+      id: "t27",
+      name: "AKHIL CHANDRA GHOSH",
+      designation: "সিনিয়র শিক্ষক (ইংরেজি)",
+      phone: "01716286589",
+      photo: "https://rcs.edu.bd/images/teacher/1725034510.jpg",
+    },
+    {
+      id: "t28",
+      name: "সামীমা ভেনিস",
+      designation: "সিনিয়র শিক্ষক (ইংরেজি)",
+      phone: "01718282161",
+      photo: "https://rcs.edu.bd/images/teacher/1725037589.jpg",
+    },
+    {
+      id: "t29",
+      name: "LAILA BILKIS",
+      designation: "সিনিয়র শিক্ষক (ইংরেজি)",
+      phone: "01726809444",
+      photo: "https://rcs.edu.bd/images/teacher/1725037741.jpg",
+    },
+    {
+      id: "t30",
+      name: "মোঃ নাজমুল হক",
+      designation: "সিনিয়র শিক্ষক (ইংরেজি)",
+      phone: "01711412186",
+      photo: "https://rcs.edu.bd/images/teacher/1758289645.jpg",
+    },
+    {
+      id: "t31",
+      name: "মোঃ কামারুজ্জামান",
+      designation: "সিনিয়র শিক্ষক (ইংরেজি)",
+      phone: "01712292358",
+      photo: "https://rcs.edu.bd/images/teacher/1758290723.jpg",
+    },
+    {
+      id: "t32",
+      name: "MD. MOIN UDDIN",
+      designation: "সিনিয়র শিক্ষক (ব্যবসায় শিক্ষা)",
+      phone: "01751566844",
+      photo: "https://rcs.edu.bd/images/teacher/1725033474.jpg",
+    },
+    {
+      id: "t33",
+      name: "MD. EZAZUR RAHMAN",
+      designation: "সিনিয়র শিক্ষক (ব্যবসায় শিক্ষা)",
+      phone: "01718406440",
+      photo: "https://rcs.edu.bd/images/teacher/1725034132.jpg",
+    },
+    {
+      id: "t34",
+      name: "MD. SHAMIM REZA",
+      designation: "সিনিয়র শিক্ষক (ব্যবসায় শিক্ষা)",
+      phone: "01712499739",
+      photo: "https://rcs.edu.bd/images/teacher/1725038170.jpg",
+    },
+    {
+      id: "t35",
+      name: "আবু আহাম্মদ আখতারুজ্জামান",
+      designation: "সিনিয়র শিক্ষক (ভৌতবিজ্ঞান)",
+      phone: "01715974636",
+      photo: "https://rcs.edu.bd/images/teacher/1725037657.jpg",
+    },
+    {
+      id: "t36",
+      name: "মো: হাসমত উল্লাহ",
+      designation: "সিনিয়র শিক্ষক (ভৌতবিজ্ঞান)",
+      phone: "01718158583",
+      photo: "https://rcs.edu.bd/images/teacher/1758290287.jpg",
+    },
+    {
+      id: "t37",
+      name: "MD. SHAHIN KAMAL",
+      designation: "সিনিয়র শিক্ষক (গণিত)",
+      phone: "01913288663",
+      photo: "https://rcs.edu.bd/images/teacher/1725034583.jpg",
+    },
+    {
+      id: "t38",
+      name: "NARGIS AKHTER BANU",
+      designation: "সিনিয়র শিক্ষক (গণিত)",
+      phone: "01831774421",
+      photo: "https://rcs.edu.bd/images/teacher/1725037442.jpg",
+    },
+    {
+      id: "t39",
+      name: "JESMIN JAHAN",
+      designation: "সিনিয়র শিক্ষক (বাংলা)",
+      phone: "01723591809",
+      photo: "https://rcs.edu.bd/images/teacher/1725038271.jpg",
+    },
+    {
+      id: "t40",
+      name: "KAZI FARHANA AKTER",
+      designation: "সিনিয়র শিক্ষক (বাংলা)",
+      phone: "01716439443",
+      photo: "https://rcs.edu.bd/images/teacher/1725038334.jpg",
+    },
+    {
+      id: "t41",
+      name: "Md. Mosharraf Hossen",
+      designation: "সিনিয়র শিক্ষক (ভূগোল)",
+      phone: "01721590040",
+      photo: "https://rcs.edu.bd/images/teacher/1725034196.jpg",
+    },
+    {
+      id: "t42",
+      name: "HOSNA ARA SATHEE",
+      designation: "সিনিয়র শিক্ষক (ভূগোল)",
+      phone: "০১৭১৪৮৬৫৪৪৭",
+      photo: "https://rcs.edu.bd/images/teacher/1725038089.jpg",
+    },
+    {
+      id: "t43",
+      name: "MD. JEL HOSSAIN",
+      designation: "সিনিয়র শিক্ষক (কৃষি শিক্ষা)",
+      phone: "01712663582",
+      photo: "https://rcs.edu.bd/images/teacher/1725034644.jpg",
+    },
+    {
+      id: "t44",
+      name: "A.U.M. SHAHIDUL ISLAM",
+      designation: "সিনিয়র শিক্ষক (কৃষি শিক্ষা)",
+      phone: "01716728279",
+      photo: "https://rcs.edu.bd/images/teacher/1725035404.jpg",
+    },
+    {
+      id: "t45",
+      name: "MD.ABU TORAB ALI AZAD",
+      designation: "সিনিয়র শিক্ষক (শারীরিক শিক্ষা)",
+      phone: "01716385900",
+      photo: "https://rcs.edu.bd/images/teacher/1725035494.jpg",
+    },
+    {
+      id: "t46",
+      name: "মোঃ কাওছার আহমেদ",
+      designation: "সিনিয়র শিক্ষক (শারীরিক শিক্ষা)",
+      phone: "01734563654",
+      photo: "https://rcs.edu.bd/images/teacher/1758290158.jpg",
+    },
+    {
+      id: "t47",
+      name: "MD. MASUD RANA",
+      designation: "সহকারী শিক্ষক (বাংলা)",
+      phone: "01716265808",
+      photo: "https://rcs.edu.bd/images/teacher/1725034886.jpg",
+    },
+    {
+      id: "t48",
+      name: "MD. ALOMGIR HOSAIN",
+      designation: "সহকারী শিক্ষক (বাংলা)",
+      phone: "01710001147",
+      photo: "https://rcs.edu.bd/images/teacher/1725038717.jpg",
+    },
+    {
+      id: "t49",
+      name: "MD. ZAHANGIR ALAM",
+      designation: "সহকারী শিক্ষক (বাংলা)",
+      phone: "01745134264",
+      photo: "https://rcs.edu.bd/images/teacher/1725038910.jpg",
+    },
+    {
+      id: "t50",
+      name: "সুমাইয়া খাতুন",
+      designation: "সহকারী শিক্ষক (বাংলা)",
+      phone: "01304527021",
+      photo: "https://rcs.edu.bd/images/teacher/1758289570.jpg",
+    },
+    {
+      id: "t51",
+      name: "তারিফুল মুহায়মিন",
+      designation: "সহকারী শিক্ষক (বাংলা)",
+      phone: "01766314018",
+      photo: "https://rcs.edu.bd/images/teacher/1758290653.jpg",
+    },
+    {
+      id: "t52",
+      name: "মোঃ সাইফুল ইসলাম",
+      designation: "সিনিয়র শিক্ষক (ইসলাম ধর্ম)",
+      phone: "01715545791",
+      photo: "https://rcs.edu.bd/images/teacher/1758290439.jpg",
+    },
+  ],
+  notices: [
+    {
+      id: "n1",
+      title: "Annual Cultural Program 2026",
+      description:
+        "The annual cultural program will be held on March 15, 2026. All students are requested to participate.",
+      image: "https://picsum.photos/id/106/800/500",
+      date: "2026-03-01",
+    },
+    {
+      id: "n2",
+      title: "SSC Exam Preparation Camp",
+      description:
+        "Special preparation camp for SSC examinees starts from April 1st.",
+      image: "",
+      date: "2026-02-28",
+    },
+  ],
+  gallery: [
+    {
+      id: "g1",
+      url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIvEL2fVfXChlz2RC80lo0I_FitZz6p7bAwg&s",
+      title: "Logo",
+    },
+    {
+      id: "g2",
+      url: "https://upload.wikimedia.org/wikipedia/commons/b/bb/Rajshahi_Collegiate_School_main_gate.jpg",
+      title: "Main Gate",
+    },
+    {
+      id: "g3",
+      url: "https://picsum.photos/id/30/500/350",
+      title: "Classroom Chronicles",
+    },
+    {
+      id: "g4",
+      url: "https://picsum.photos/id/44/500/350",
+      title: "Teachers' Day Tribute",
+    },
+  ],
+  ratings: [],
+  homeContent:
+    "Album of RCS is a student-driven platform where students share school memories, entertainment content, and nostalgic moments of Rajshahi Collegiate School.",
+  aboutContent:
+    "Rajshahi Collegiate School, established in 1828, stands as one of the oldest and most prestigious institutions in Bangladesh. Located in the heart of Rajshahi city, the school carries a legacy of academic brilliance, cultural heritage, and timeless camaraderie.",
+  footerContent:
+    "Album of RCS — preserving the memories of Rajshahi Collegiate School",
+};
